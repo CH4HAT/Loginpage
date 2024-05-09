@@ -1,0 +1,76 @@
+.container {
+    position: relative;
+}
+
+.box1 {
+    width: 485px;
+    height: 1024px;
+    background-color: rgba(255, 255, 255, 1);
+    background: linear-gradient(270deg, rgb(236, 251, 233) 30.5%, rgb(134, 224, 198) 100%);
+  }
+
+
+.box2 {
+    width: 955px;
+    height: 1024px;
+    background-color: #ffffff;
+}
+
+.my-new-design {
+    position: relative;
+    width: 424px;
+    height: 424px;
+  }
+  
+.my-new-design .img {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    top: 0;
+    left: -4px;
+    object-fit: cover;
+}
+
+.cybercrate {
+    position:relative;
+    width: 218px;
+    height: 57px;
+}
+
+.cybercrate .text {
+    position: absolute;
+    width: 218px;
+    top: -1px;
+    left: 0;
+    font-family: "League Spartan-Semibold", Helvetica;
+    font-weight: 600;
+    color: #000;
+    font-size: 45px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.cybercrate {
+    position:relative;
+    width: 218px;
+    height: 57px;
+}
+
+.tagline{
+    position:relative;
+    width: 725px;
+    height: 54px;
+}
+
+.tagline.tag{
+    position: absolute;
+    width: 725px;
+    top: -1px;
+    left: 0;
+    font-family: "League Spartan-Medium", Helvetica;
+    font-weight: 500;
+    color: #000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+}
