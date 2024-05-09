@@ -6,7 +6,8 @@
     width: 485px;
     height: 1024px;
     background-color: rgba(255, 255, 255, 1);
-    background: linear-gradient(270deg, rgb(236, 251, 233) 30.5%, rgb(134, 224, 198) 100%);
+    background: linear-gradient(270deg, rgb(236, 251, 233) 30.5%, #084f2d 100%);
+
   }
 
 
@@ -16,13 +17,13 @@
     background-color: #ffffff;
 }
 
-.my-new-design {
+.img {
     position: relative;
     width: 424px;
     height: 424px;
   }
   
-.my-new-design .img {
+.img {
     position: absolute;
     width: 432px;
     height: 432px;
@@ -37,9 +38,9 @@
     height: 57px;
 }
 
-.cybercrate .text {
+.cybercrate {
     position: absolute;
-    width: 218px;
+    width: 100%;
     top: -1px;
     left: 0;
     font-family: "League Spartan-Semibold", Helvetica;
