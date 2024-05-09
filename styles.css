@@ -2,11 +2,12 @@
     position: relative;
 }
 
+
 .box1 {
     width: 485px;
     height: 1024px;
     background-color: rgba(255, 255, 255, 1);
-    background: linear-gradient(270deg, rgb(236, 251, 233) 30.5%, #084f2d 100%);
+    background: linear-gradient(270deg, rgb(234, 244, 232) 30.5%, #084f2d 100%);
 
   }
 
@@ -17,38 +18,27 @@
     background-color: #ffffff;
 }
 
-.img {
-    position: relative;
-    width: 424px;
-    height: 424px;
-  }
-  
-.img {
-    position: absolute;
-    width: 432px;
-    height: 432px;
-    top: 0;
-    left: -4px;
-    object-fit: cover;
-}
 
 .cybercrate {
     position:relative;
     width: 218px;
     height: 57px;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 80px;
 }
 
-.cybercrate {
+.cybercrate  {
     position: absolute;
     width: 100%;
     top: -1px;
     left: 0;
-    font-family: "League Spartan-Semibold", Helvetica;
     font-weight: 600;
     color: #000;
     font-size: 45px;
     letter-spacing: 0;
     line-height: normal;
+    margin-left: 40px;
+    color: #ffffff;
 }
 
 .cybercrate {
@@ -74,4 +64,13 @@
     font-size: 36px;
     letter-spacing: 0;
     line-height: normal;
+}
+
+  
+.img {
+    
+    width: 20%;
+    height: 20%;
+    top: 0;
+    object-fit: cover;
 }
