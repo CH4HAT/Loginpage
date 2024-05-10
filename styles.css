@@ -1,76 +1,177 @@
-.container {
-    position: relative;
+/* Body styling */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #a0e0d5, #084f2d);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container styling */
+.main-container {
+    display: flex;
+    width: 80%; /* Maintain consistent width for the whole layout */
+    height: 80%; /* Maintain consistent height */
+    justify-content: space-between; /* Space between image and login container */
+    margin: auto; /* Center the container within the body */
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+/* Image container */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.box1 {
-    width: 485px;
-    height: 1024px;
-    background-color: rgba(255, 255, 255, 1);
-    background: linear-gradient(270deg, rgb(234, 244, 232) 30.5%, #084f2d 100%);
+.left-image {
+    max-width: 80%; /* Set the max width for the image */
+    max-height: 90%; /* Set the max height for the image */
+    object-fit: contain; /* Keeps the aspect ratio */
+}
 
-  }
-
-
-.box2 {
-    width: 955px;
-    height: 1024px;
-    background-color: #ffffff;
+/* Login container */
+.login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px; /* Adjust this value for right margin as desired */
 }
 
 
-.cybercrate {
-    position:relative;
-    width: 218px;
-    height: 57px;
+/* Login box styling */
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 60%; /* Ensures the box takes the full width of the container */
+}
+
+/* Brand styling */
+.brand h1 {
     font-family: 'Dancing Script', cursive;
-    padding-top: 80px;
+    font-size: 48px;
+    color: #084f2d;
+    margin-bottom: 20px;
 }
 
-.cybercrate  {
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #084f2d;
+}
+
+.input-group input {
+    width: 100%; /* Input fields take the full width of the container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.login-button {
+    padding: 10px;
+    background-color: #084f2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%; /* Button takes the full width of the container */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #006d3a;
+    transform: scale(1.05); /* Enlarge button slightly on hover */
+}
+
+/* Signup text styling */
+.signup-text {
+    margin-top: 10px;
+}
+
+.signup-text a {
+    color: #084f2d;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Animation definitions */
+
+/* Fade-out animation for CyberCrate container */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Fade-in animation for main content */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* CyberCrate container */
+.cybercrate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 100%;
-    top: -1px;
-    left: 0;
-    font-weight: 600;
-    color: #000;
-    font-size: 45px;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-left: 40px;
-    color: #ffffff;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: fadeOut 3s ease-in forwards;
+    z-index: 1;
+}
+/* Styling for the CyberCrate logo */
+.cybercrate-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 200px; /* Adjust as desired */
+    color: #084f2d;
+    text-align: center;
+    margin-bottom: 10px; /* Add some margin for spacing between the logo and text */
 }
 
-.cybercrate {
-    position:relative;
-    width: 218px;
-    height: 57px;
+/* Main content container */
+.main-content {
+    display: none; /* Initially hidden */
+    opacity: 0; /* Ensure it starts hidden */
+    animation: fadeIn 3s ease-in 3s forwards;
+    width: 100%; /* Ensures the main content spans the full width of the page */
+    height: 100vh; /* Ensures the main content spans the full height of the page */
+    display: flex;
+    justify-content: space-between; /* Aligns children to each side */
+    z-index: 0;
 }
 
-.tagline{
-    position:relative;
-    width: 725px;
-    height: 54px;
-}
-
-.tagline.tag{
-    position: absolute;
-    width: 725px;
-    top: -1px;
-    left: 0;
-    font-family: "League Spartan-Medium", Helvetica;
-    font-weight: 500;
-    color: #000;
-    font-size: 36px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-  
-.img {
-    
-    width: 20%;
-    height: 20%;
-    top: 0;
-    object-fit: cover;
-}
